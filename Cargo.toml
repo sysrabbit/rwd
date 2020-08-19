@@ -1,0 +1,13 @@
+[package]
+name = "rwd"
+version = "0.1.0"
+authors = ["Michael A Borders <sysrabbit@ivalice.cc>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1.0.20"
+
+[dev-dependencies]
+walkdir = "2.3.1"

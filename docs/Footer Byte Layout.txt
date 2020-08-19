@@ -1,0 +1,28 @@
+This is a file I was using to keep track of the footer byte layout.
+===================================
+00-11 : [ H e a d e r ]
+11-64 : [ Empty ]
+64-72 : [ 0C 00 00 00 00 00 00 00 ]
+72-80 : [ 12 00 00 00 00 00 00 00 ]
+80-88 : [ 8 Byte Dynamic Byte Group ]
+88-96 : [ 12 00 00 00 00 00 00 00 ]
+===================================
+00-09 : [ F i l e s ]
+09-64 : [ Empty ]
+64-72 : [ 1E 00 00 00 00 00 00 00 ]
+72-76 : [ file length? ]
+76-80 : [ Empty ]
+80-88 : [ 8 Byte Dynamic Byte Group ]
+88-92 : [ file length? ]
+92-96 : [ Empty ]
+===================================
+00-11 : [ F o o t e r ]
+11-64 : [ Empty ]
+64-68 : [ header + file length? ]
+68-72 : [ Empty ]
+72-76 : [ File Metadata Offset ]
+76-80 : [ Empty ]
+80-88 : [ 8 Byte Dynamic Byte Group ]
+88-92 : [ File Metadata Offset ]
+92-96 : [ Empty ]
+===================================
